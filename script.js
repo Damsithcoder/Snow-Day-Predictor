@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_KEY = OPENWEATHER_API_KEY; // Using API key from config file
+    const API_KEY = secret.OPENWEATHER_API_KEY; // Using API key from config file
     const locationInput = document.getElementById('location');
     const getWeatherBtn = document.getElementById('getWeatherBtn');
     const weatherInfo = document.getElementById('weatherInfo');
