@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_KEY = "2d4202ded89c8b8033194e8e3d10b62a"; // Replace with your OpenWeatherMap API key
+    const API_KEY = config.API_KEY; // Using API key from config file
     const locationInput = document.getElementById('location');
     const getWeatherBtn = document.getElementById('getWeatherBtn');
     const weatherInfo = document.getElementById('weatherInfo');
