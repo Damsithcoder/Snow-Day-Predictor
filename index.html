@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Day Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>❄️ Snow Day Predictor ❄️</h1>
+        <div class="calculator-box">
+            <div class="input-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Enter city name">
+            </div>
+            <button id="getWeatherBtn">Get Current Weather</button>
+            <div class="weather-info" id="weatherInfo"></div>
+            <div class="input-group">
+                <label for="temperature">Temperature (°F):</label>
+                <input type="number" id="temperature" placeholder=" temperature" readonly>
+            </div>
+            <div class="input-group">
+                <label for="snowfall">Expected Snowfall (inches):</label>
+                <input type="number" id="snowfall" placeholder=" snowfall amount" readonly>
+            </div>
+            <div class="input-group">
+                <label for="windSpeed">Wind Speed (mph):</label>
+                <input type="number" id="windSpeed" placeholder=" wind speed" readonly>
+            </div>
+            <button id="calculateBtn">Calculate Chance of Snow Day</button>
+            <div id="result" class="result-box"></div>
+        </div>
+    </div>
+    <div id="snowflakes"></div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
