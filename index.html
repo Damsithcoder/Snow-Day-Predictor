@@ -33,6 +33,24 @@
         </div>
     </div>
     <div id="snowflakes"></div>
+    <script>
+        // Check if config.js exists and show setup instructions if it doesn't
+        window.addEventListener('error', function(e) {
+            if (e.target.src && e.target.src.includes('config.js')) {
+                document.querySelector('.container').innerHTML = `
+                    <div class="error-message">
+                        <h2>⚠️ Setup Required</h2>
+                        <p>To use this Snow Day Predictor:</p>
+                        <ol>
+                            <li>Rename <code>config.example.js</code> to <code>config.js</code></li>
+                            <li>Get an API key from <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></li>
+                            <li>Add your API key to config.js</li>
+                        </ol>
+                    </div>
+                `;
+            }
+        }, true);
+    </script>
     <script src="config.js"></script>
     <script src="script.js"></script>
 </body>

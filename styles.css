@@ -147,3 +147,38 @@ button:hover {
         transform: translateY(100vh) rotate(360deg);
     }
 }
+
+.error-message {
+    background: #fff3f3;
+    border: 1px solid #ffcdd2;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.error-message h2 {
+    color: #d32f2f;
+    margin-top: 0;
+}
+
+.error-message code {
+    background: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.error-message ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.error-message a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.error-message a:hover {
+    text-decoration: underline;
+}
